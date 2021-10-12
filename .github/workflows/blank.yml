@@ -34,5 +34,5 @@ jobs:
           bash -c "wget http://google.com"
           
           echo "Sandboxed"
-          firejail -net=none bash -c "wget http://google.com"
+          firejail --net=none bash -c "wget http://google.com"
 
