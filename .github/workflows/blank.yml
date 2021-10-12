@@ -31,8 +31,8 @@ jobs:
           sudo apt-get install firejail
           
           echo "Regular"
-          bash -c "ping google.com"
+          bash -c "wget http://google.com"
           
           echo "Sandboxed"
-          firejail bash -c "ping google.com"
+          firejail bash -c "wget http://google.com"
 
